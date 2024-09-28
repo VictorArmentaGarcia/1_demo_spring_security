@@ -15,10 +15,10 @@ public class WebSecurityConfig {
 	@Bean
 	public UserDetailsService userDetailsService() {
 		
-		UserDetails userDetails = User
-				.withUsername("user")
+		UserDetails userDetails = User.withUsername("user")
 				.password("pass123")
-				.roles("read").build();
+				.roles("read")
+				.build();
 		return new InMemoryUserDetailsManager(userDetails);
 	}
 	

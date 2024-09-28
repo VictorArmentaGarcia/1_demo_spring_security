@@ -6,6 +6,9 @@ spring boot dev tolos
 spring configuration processor
 
 
+JPA
+Posgress SQL Driver
+
 Comando para compilar
 mvn clean install
 
