@@ -1,7 +1,9 @@
-package com.demo.security.controller;
+package com.demo.security.controller.impl;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+
+import com.demo.security.controller.DemoController;
 
 @RestController
 public class DemoControllerImpl implements DemoController {
