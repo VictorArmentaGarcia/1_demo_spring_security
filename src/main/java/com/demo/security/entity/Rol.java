@@ -1,10 +1,6 @@
 package com.demo.security.entity;
 
-import com.demo.security.enums.EnumRol;
-
 import jakarta.persistence.Entity;
-import jakarta.persistence.EnumType;
-import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
@@ -18,7 +14,7 @@ import lombok.Setter;
 @Entity(name = "rol")
 public class Rol {
 
-	public Rol(EnumRol nombre) {
+	public Rol(String nombre) {
 		super();
 		this.setNombre(nombre);
 	}
@@ -27,6 +23,5 @@ public class Rol {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	
-	@Enumerated(EnumType.STRING)
-	private EnumRol nombre;
+	private String nombre;
 }
